@@ -1,36 +1,136 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌱 Green Next.js Boilerplate
 
-## Getting Started
+A Next.js boilerplate optimized to minimize environmental impact with maximum performance and reduced carbon footprint.
 
-First, run the development server:
+## 🎯 Goals
+
+This project aims to create a starting point for Next.js applications by prioritizing:
+
+- **Energy performance**: Optimized code to reduce CPU/memory consumption
+- **Minimal data transfer**: Reduced bundle size and network optimizations
+- **Green hosting**: Ready-to-use configuration for eco-responsible hosts
+- **Ecological monitoring**: Tools to measure environmental impact
+
+## ✨ Eco-friendly Features
+
+### 🚀 Technical Optimizations
+
+- **Smart bundle splitting** with impact analysis
+- **Advanced compression** (Brotli, Gzip)
+- **Optimized images** with next-gen formats (WebP, AVIF)
+- **Aggressive lazy loading** of components
+- **Service Worker** for optimal caching
+- **Selective preloading** of critical resources
+
+### 📊 Environmental Monitoring
+
+- Built-in carbon impact dashboard
+- Energy consumption metrics
+- Automatic optimization reports
+- Eco-responsible Core Web Vitals tracking
+
+### 🌍 Green Configuration
+
+- Environment variables for green hosts
+- Optimized deployment scripts
+- Eco-responsible CDN configuration
+- Smart caching strategies
+
+## 🛠️ Tech Stack
+
+- **Next.js 14+** with App Router
+- **TypeScript** for robust code
+- **Tailwind CSS** with aggressive purging
+- **Custom Bundle Analyzer**
+- **ESLint/Prettier** with eco-responsible rules
+- **Lighthouse CI** for continuous auditing
+
+## 🚀 Quick Start
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone the repository
+git clone https://github.com/your-username/green-nextjs-boilerplate.git
+cd green-nextjs-boilerplate
+
+# Install dependencies (with optimized npm cache)
+npm ci
+
+# Run in development mode
+npm run dev:green
+
+# Optimized production build
+npm run build:green
+
+# Analyze environmental impact
+npm run analyze:carbon
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📈 Performance Metrics
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Bundle size**: < 100KB (First Load JS)
+- **Lighthouse Performance**: > 95
+- **Carbon footprint**: < 0.5g CO2 per page view
+- **Time to Interactive**: < 2s
+- **Cumulative Layout Shift**: < 0.1
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌿 Best Practices Included
 
-## Learn More
+### Code
 
-To learn more about Next.js, take a look at the following resources:
+- Components optimized for tree-shaking
+- Custom hooks for efficient state management
+- Utils for carbon impact calculation
+- Eco-responsible development patterns
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Optimized Vercel/Netlify configuration
+- Smart cache headers
+- Automatic compression
+- Performance monitoring
 
-## Deploy on Vercel
+### Development
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Pre-commit hooks for impact analysis
+- PR templates with green checklist
+- Best practices documentation
+- Automatic optimization scripts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔧 Configuration
+
+The boilerplate includes ready-to-use configurations:
+
+- Performance-optimized `next.config.js`
+- Smart purging `tailwind.config.js`
+- Eco-responsible `.eslintrc.js` rules
+- `carbon-config.json` for monitoring
+
+## 📊 Monitoring Dashboard
+
+Built-in interface to track:
+
+- Real-time carbon impact
+- Performance metrics
+- Suggested optimizations
+- Baseline comparison
+
+## 🤝 Contributing
+
+Contributions are welcome! Check the [contribution guide](CONTRIBUTING.md) for eco-responsible best practices.
+
+## 📄 License
+
+MIT License - See [LICENSE](LICENSE) for more details.
+
+## 🌍 Recommended Hosts
+
+- **Vercel** (renewable energy)
+- **Netlify** (carbon neutral)
+- **Railway** (green infrastructure)
+- **PlanetScale** (eco-responsible database)
+
+---
+
+**💚 Built with environmental consciousness**
+
+_This project is part of the initiative for a more sustainable web. Every optimization counts!_
