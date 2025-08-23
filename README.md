@@ -116,7 +116,23 @@ Built-in interface to track:
 
 ## 🤝 Contributing
 
-Contributions are welcome! Check the [contribution guide](CONTRIBUTING.md) for eco-responsible best practices.
+Contributions are welcome! Check the [contribution guide](CONTRIBUTE.md) for eco-responsible best practices.
+
+### 💡 Green Suggestions
+
+We actively encourage the community to share eco-friendly ideas and optimizations:
+
+- **Performance optimizations** that reduce energy consumption
+- **Bundle size reductions** and code splitting strategies  
+- **Green hosting** recommendations and configurations
+- **Carbon footprint** measurement tools and techniques
+- **Sustainable development** practices and patterns
+- **Energy-efficient** UI/UX design principles
+
+Submit your green suggestions via:
+- 🌱 Issues labeled with `green-suggestion`
+- 🔥 Pull requests with environmental impact measurements
+- 📊 Performance benchmarks before/after optimizations
 
 ## 📄 License
 
