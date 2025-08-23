@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
     },
   },
   experimental: {
-    optimizePackageImports: ["@radix-ui/react-icons"],
+    // optimizePackageImports: ["@radix-ui/react-icons"],
     webVitalsAttribution: ["CLS", "LCP", "FCP", "FID", "TTFB"],
   },
 
@@ -41,10 +41,6 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "**.vercel.app",
-      },
-      {
-        protocol: "https",
-        hostname: "**.netlify.app",
       },
     ],
   },
@@ -136,20 +132,6 @@ const nextConfig: NextConfig = {
 
   // React strict mode for better performance insights
   reactStrictMode: true,
-
-  // TypeScript configuration
-  typescript: {
-    // Dangerously allow production builds to successfully complete even if type errors
-    ignoreBuildErrors: false,
-  },
-
-  // ESLint configuration
-  eslint: {
-    // Run ESLint on these directories during build
-    dirs: ["src", "components", "lib", "hooks"],
-    // Don't run ESLint during production builds
-    ignoreDuringBuilds: false,
-  },
 };
 
 module.exports = nextConfig;
