@@ -1,118 +1,109 @@
 # 🌱 Green Next.js Boilerplate
 
-A Next.js boilerplate optimized to minimize environmental impact with maximum performance and reduced carbon footprint.
+The first eco-conscious Next.js boilerplate optimized for planet and performance.
 
-## 🎯 Goals
+## 🎯 Purpose
 
-This project aims to create a starting point for Next.js applications by prioritizing:
+This project provides a starting point for Next.js applications that prioritize both environmental sustainability and developer experience. Build eco-conscious applications that minimize environmental impact while maximizing developer productivity and user experience.
 
-- **Energy performance**: Optimized code to reduce CPU/memory consumption
-- **Minimal data transfer**: Reduced bundle size and network optimizations
-- **Green hosting**: Ready-to-use configuration for eco-responsible hosts
-- **Ecological monitoring**: Tools to measure environmental impact
+## ✨ Features
 
-## ✨ Eco-friendly Features
+### 🚀 Performance Optimized
+- **Next.js 15** with App Router and Turbopack
+- **TypeScript** for type safety
+- **Tailwind CSS 4** with optimized styling
+- **Modern tooling** and best practices configured
 
-### 🚀 Technical Optimizations
+### 🌍 Eco-Conscious Design
+- Optimized for speed with minimal bundle size
+- Efficient rendering and smart resource management
+- Carbon-aware features and green coding practices
+- Reduced digital carbon footprint and energy consumption
 
-- **Smart bundle splitting** with impact analysis
-- **Advanced compression** (Brotli, Gzip)
-- **Optimized images** with next-gen formats (WebP, AVIF)
-- **Aggressive lazy loading** of components
-- **Service Worker** for optimal caching
-- **Selective preloading** of critical resources
+### 🎨 Modern UI/UX
+- **Shadcn/ui** components with beautiful, accessible design
+- **Dark/light mode** support with next-themes
+- **Responsive design** patterns
+- **Lucide React** icons
 
-### 📊 Environmental Monitoring
+### 🌐 Internationalization
+- Built-in **i18n support** with locale routing
+- Multi-language dictionary system
+- Optimized for global accessibility
 
-- Built-in carbon impact dashboard
-- Energy consumption metrics
-- Automatic optimization reports
-- Eco-responsible Core Web Vitals tracking
-
-### 🌍 Green Configuration
-
-- Environment variables for green hosts
-- Optimized deployment scripts
-- Eco-responsible CDN configuration
-- Smart caching strategies
+### 🛠️ Developer Experience
+- **Biome** for fast linting and formatting
+- Modern tooling configuration
+- TypeScript support throughout
+- Immediate productivity setup
 
 ## 🛠️ Tech Stack
 
-- **Next.js 14+** with App Router
-- **TypeScript** for robust code
-- **Tailwind CSS** with aggressive purging
-- **Custom Bundle Analyzer**
-- **ESLint/Prettier** with eco-responsible rules
-- **Lighthouse CI** for continuous auditing
+- **Next.js 15** with App Router
+- **React 19**
+- **TypeScript 5**
+- **Tailwind CSS 4**
+- **Shadcn/ui** components
+- **Biome** for linting/formatting
+- **next-themes** for theme switching
+- **Internationalization** support
 
 ## 🚀 Quick Start
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/green-nextjs-boilerplate.git
+git clone https://github.com/NicolasGiaco/green-nextjs-boilerplate.git
 cd green-nextjs-boilerplate
 
-# Install dependencies (with optimized npm cache)
+# Install dependencies
 npm ci
 
 # Run in development mode
-npm run dev:green
+npm run dev
 
-# Optimized production build
-npm run build:green
+# Build for production
+npm run build
 
-# Analyze environmental impact
-npm run analyze:carbon
+# Format code
+npm run format
+
+# Lint code
+npm run lint
 ```
 
-## 📈 Performance Metrics
+## 🏗️ Project Structure
 
-- **Bundle size**: < 100KB (First Load JS)
-- **Lighthouse Performance**: > 95
-- **Carbon footprint**: < 0.5g CO2 per page view
-- **Time to Interactive**: < 2s
-- **Cumulative Layout Shift**: < 0.1
+```
+src/
+├── app/
+│   ├── [lang]/               # Internationalized routes
+│   │   ├── layout.tsx        # Root layout with i18n
+│   │   └── (welcome)/        # Welcome page group
+│   ├── globals.css           # Global styles
+│   └── favicon.ico
+├── components/
+│   ├── ui/                   # Shadcn/ui components
+│   ├── theme/                # Theme provider & toggle
+│   └── navbar/               # Navigation components
+├── dictionaries/             # i18n translation files
+├── lib/                      # Utility functions
+├── config/                   # Configuration files
+└── middleware.ts             # Next.js middleware for i18n
+```
 
-## 🌿 Best Practices Included
+## 🌿 Green Features
 
-### Code
+### Code Optimization
+- Efficient component architecture
+- Optimized bundle splitting
+- Tree-shaking friendly utilities
+- Performance-first development patterns
 
-- Components optimized for tree-shaking
-- Custom hooks for efficient state management
-- Utils for carbon impact calculation
-- Eco-responsible development patterns
-
-### Deployment
-
-- Optimized Vercel/Netlify configuration
-- Smart cache headers
-- Automatic compression
-- Performance monitoring
-
-### Development
-
-- Pre-commit hooks for impact analysis
-- PR templates with green checklist
-- Best practices documentation
-- Automatic optimization scripts
-
-## 🔧 Configuration
-
-The boilerplate includes ready-to-use configurations:
-
-- Performance-optimized `next.config.js`
-- Smart purging `tailwind.config.js`
-- Eco-responsible `.eslintrc.js` rules
-- `carbon-config.json` for monitoring
-
-## 📊 Monitoring Dashboard
-
-Built-in interface to track:
-
-- Real-time carbon impact
-- Performance metrics
-- Suggested optimizations
-- Baseline comparison
+### Sustainable Practices
+- Minimized resource consumption
+- Smart caching strategies
+- Energy-efficient rendering
+- Carbon-conscious development workflows
 
 ## 🤝 Contributing
 
@@ -138,12 +129,11 @@ Submit your green suggestions via:
 
 MIT License - See [LICENSE](LICENSE) for more details.
 
-## 🌍 Recommended Hosts
+## 🌍 Recommended Green Hosts
 
 - **Vercel** (renewable energy)
 - **Netlify** (carbon neutral)
 - **Railway** (green infrastructure)
-- **PlanetScale** (eco-responsible database)
 
 ---
 
