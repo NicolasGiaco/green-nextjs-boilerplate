@@ -9,29 +9,34 @@ This project provides a starting point for Next.js applications that prioritize 
 ## ✨ Features
 
 ### 🚀 Performance Optimized
+
 - **Next.js 15** with App Router and Turbopack
 - **TypeScript** for type safety
 - **Tailwind CSS 4** with optimized styling
 - **Modern tooling** and best practices configured
 
 ### 🌍 Eco-Conscious Design
+
 - Optimized for speed with minimal bundle size
 - Efficient rendering and smart resource management
 - Carbon-aware features and green coding practices
 - Reduced digital carbon footprint and energy consumption
 
 ### 🎨 Modern UI/UX
+
 - **Shadcn/ui** components with beautiful, accessible design
 - **Dark/light mode** support with next-themes
 - **Responsive design** patterns
 - **Lucide React** icons
 
 ### 🌐 Internationalization
+
 - Built-in **i18n support** with locale routing
 - Multi-language dictionary system
 - Optimized for global accessibility
 
 ### 🛠️ Developer Experience
+
 - **Biome** for fast linting and formatting
 - Modern tooling configuration
 - TypeScript support throughout
@@ -56,19 +61,19 @@ git clone https://github.com/NicolasGiaco/green-nextjs-boilerplate.git
 cd green-nextjs-boilerplate
 
 # Install dependencies
-npm ci
+pnpm i
 
 # Run in development mode
-npm run dev
+pnpm run dev
 
 # Build for production
-npm run build
+pnpm run build
 
 # Format code
-npm run format
+pnpm run format
 
 # Lint code
-npm run lint
+pnpm run lint
 ```
 
 ## 🏗️ Project Structure
@@ -94,12 +99,14 @@ src/
 ## 🌿 Green Features
 
 ### Code Optimization
+
 - Efficient component architecture
 - Optimized bundle splitting
 - Tree-shaking friendly utilities
 - Performance-first development patterns
 
 ### Sustainable Practices
+
 - Minimized resource consumption
 - Smart caching strategies
 - Energy-efficient rendering
@@ -114,13 +121,14 @@ Contributions are welcome! Check the [contribution guide](CONTRIBUTE.md) for eco
 We actively encourage the community to share eco-friendly ideas and optimizations:
 
 - **Performance optimizations** that reduce energy consumption
-- **Bundle size reductions** and code splitting strategies  
+- **Bundle size reductions** and code splitting strategies
 - **Green hosting** recommendations and configurations
 - **Carbon footprint** measurement tools and techniques
 - **Sustainable development** practices and patterns
 - **Energy-efficient** UI/UX design principles
 
 Submit your green suggestions via:
+
 - 🌱 Issues labeled with `green-suggestion`
 - 🔥 Pull requests with environmental impact measurements
 - 📊 Performance benchmarks before/after optimizations

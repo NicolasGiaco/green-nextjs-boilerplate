@@ -1,4 +1,4 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from "next"
 
 const nextConfig: NextConfig = {
   // Enable latest features for performance
@@ -108,12 +108,12 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-    ];
+    ]
   },
 
   // Rewrites for performance (if needed)
   async rewrites() {
-    return [];
+    return []
   },
 
   // Environment variables
@@ -132,6 +132,6 @@ const nextConfig: NextConfig = {
 
   // React strict mode for better performance insights
   reactStrictMode: true,
-};
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig

@@ -1,20 +1,20 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { ThemeProvider } from "@/components/theme/theme-provider";
-import { Navbar } from "@/components/navbar/navbar";
-import { StructuredData } from "@/components/seo/structured-data";
-import { i18n, type Locale } from "@/config/i18n-config";
-import "../globals.css";
+import type { Metadata } from "next"
+import { Geist, Geist_Mono } from "next/font/google"
+import { Navbar } from "@/components/navbar/navbar"
+import { StructuredData } from "@/components/seo/structured-data"
+import { ThemeProvider } from "@/components/theme/theme-provider"
+import { i18n } from "@/config/i18n-config"
+import "../globals.css"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
-});
+})
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-});
+})
 
 export const metadata: Metadata = {
   title: {
@@ -57,8 +57,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://green-nextjs-boilerplate.vercel.app",
     title: "Green Next.js Boilerplate",
-    description:
-      "The first eco-conscious Next.js boilerplate optimized for planet and performance.",
+    description: "The first eco-conscious Next.js boilerplate optimized for planet and performance.",
     siteName: "Green Next.js Boilerplate",
     images: [
       {
@@ -72,8 +71,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Green Next.js Boilerplate",
-    description:
-      "The first eco-conscious Next.js boilerplate optimized for planet and performance.",
+    description: "The first eco-conscious Next.js boilerplate optimized for planet and performance.",
     images: ["/og-image.png"],
     creator: "@NicolasGiaco",
   },
@@ -88,36 +86,27 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-};
-
-export async function generateStaticParams() {
-  return i18n.locales.map((locale) => ({ lang: locale }));
 }
 
-export default async function RootLayout(props: {
-  children: React.ReactNode;
-  params: Promise<{ lang: string }>;
-}) {
-  const { lang } = await props.params;
-  const { children } = props;
+export async function generateStaticParams() {
+  return i18n.locales.map(locale => ({ lang: locale }))
+}
+
+export default async function RootLayout(props: { children: React.ReactNode; params: Promise<{ lang: string }> }) {
+  const { lang } = await props.params
+  const { children } = props
 
   return (
     <html lang={lang} suppressHydrationWarning>
       <head>
         <StructuredData />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          disableTransitionOnChange
-        >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange>
           <Navbar />
           {children}
         </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }

@@ -47,12 +47,13 @@ export function StructuredData() {
     ],
     license: "https://opensource.org/licenses/MIT",
     codeRepository: "https://github.com/NicolasGiaco/green-nextjs-boilerplate",
-  };
+  }
 
   return (
     <script
       type="application/ld+json"
+      // biome-ignore lint/security/noDangerouslySetInnerHtml: <JSON.stringify(structuredData)>
       dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
     />
-  );
+  )
 }

@@ -1,10 +1,10 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import { ThemeToggle } from "@/components/theme/theme-toggle";
-import { LanguageSwitcher } from "@/components/navbar/language-switcher";
-import Image from "next/image";
-import { Leaf } from "lucide-react";
+import { Leaf } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
+import { LanguageSwitcher } from "@/components/navbar/language-switcher"
+import { ThemeToggle } from "@/components/theme/theme-toggle"
 
 export function Navbar() {
   return (
@@ -42,13 +42,7 @@ export function Navbar() {
           </div>
           <nav className="flex items-center space-x-4">
             <Link href="https://github.com/NicolasGiaco/green-nextjs-boilerplate">
-              <Image
-                width={24}
-                height={24}
-                className="dark:invert"
-                src="/assets/icons/github.svg"
-                alt="GitHub"
-              />
+              <Image width={24} height={24} className="dark:invert" src="/assets/icons/github.svg" alt="GitHub" />
             </Link>
             <LanguageSwitcher />
             <ThemeToggle />
@@ -56,5 +50,5 @@ export function Navbar() {
         </div>
       </div>
     </header>
-  );
+  )
 }
