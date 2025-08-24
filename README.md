@@ -2,6 +2,8 @@
 
 The first eco-conscious Next.js boilerplate optimized for planet and performance.
 
+Demo: https://green-nextjs-boilerplate.vercel.app/
+
 ## 🎯 Purpose
 
 This project provides a starting point for Next.js applications that prioritize both environmental sustainability and developer experience. Build eco-conscious applications that minimize environmental impact while maximizing developer productivity and user experience.
