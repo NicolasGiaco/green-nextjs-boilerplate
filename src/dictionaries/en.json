@@ -1,0 +1,104 @@
+{
+  "navbar": {
+    "title": "Green Next.js Boilerplate"
+  },
+  "welcome": {
+    "hero": {
+      "title": "The first eco-conscious Next.js boilerplate optimized for",
+      "titlePlanet": "planet",
+      "titleAnd": "and",
+      "titlePerformance": "performance",
+      "subtitle": "Start your next project knowing it's optimized for both user experience and planetary health.",
+      "getStarted": "Get Started",
+      "supportGithub": "Support on GitHub"
+    },
+    "features": {
+      "purpose": {
+        "title": "🌱 Purpose",
+        "description": "Build eco-conscious applications that minimize environmental impact while maximizing developer productivity and user experience."
+      },
+      "performance": {
+        "title": "⚡ Performance",
+        "description": "Optimized for speed with minimal bundle size, efficient rendering, and smart resource management out of the box."
+      },
+      "developerExperience": {
+        "title": "🛠️ Developer Experience",
+        "description": "Modern tooling, TypeScript support, and best practices configured for immediate productivity and code quality."
+      },
+      "sustainability": {
+        "title": "🌍 Sustainability",
+        "description": "Carbon-aware features and green coding practices to reduce digital carbon footprint and energy consumption."
+      },
+      "productionReady": {
+        "title": "🚀 Production Ready",
+        "description": "Pre-configured build processes, optimized Dockerfile, and production-grade security practices. Ready to deploy from day one."
+      },
+      "openSource": {
+        "title": "🆓 Free & Open Source",
+        "description": "Completely free to use and modify. Everyone can contribute to make web development more sustainable together."
+      }
+    },
+    "ecoStats": {
+      "title": "🌱 Environmental Impact",
+      "subtitle": "Verified benefits of our eco-conscious tech stack",
+      "lessCO2": "Less CO2",
+      "fasterStartup": "Faster Startup",
+      "lessCSS": "Less CSS",
+      "fasterLinting": "Faster Linting"
+    },
+    "quickStart": {
+      "title": "Get Started in Seconds",
+      "subtitle": "Clone, install, and start building. It's that simple."
+    },
+    "techStack": {
+      "title": "Complete Tech Stack",
+      "subtitle": "Everything you need for modern web development, pre-configured and ready to use."
+    },
+    "environmentalComparison": {
+      "title": "🌍 Environmental Impact Comparison",
+      "subtitle": "Verified metrics showing how this eco-conscious stack reduces environmental impact compared to traditional alternatives.",
+      "tableHeaders": {
+        "metric": "Metric",
+        "greenStack": "This Green Stack",
+        "standardNextjs": "Standard Next.js Setup",
+        "traditionalStack": "Traditional Stack",
+        "environmentalBenefit": "Environmental Benefit"
+      },
+      "realWorldBenefits": {
+        "forUsers": {
+          "title": "For Users",
+          "description": "Faster loading sites mean less time waiting, reducing device battery consumption and energy usage."
+        },
+        "forDevelopers": {
+          "title": "For Developers",
+          "description": "Faster builds and efficient tooling mean less development machine energy and reduced CI/CD costs."
+        },
+        "forPlanet": {
+          "title": "For Planet",
+          "description": "Smaller bundles and optimized performance reduce server load and network transfer energy globally."
+        }
+      }
+    },
+    "dataSources": {
+      "title": "📊 Data Sources & Methodology",
+      "subtitle": "All metrics are based on verified benchmarks and industry standards",
+      "carbonEmissions": {
+        "title": "Carbon Emissions",
+        "description": "Based on Sustainable Web Design Model v4.0 and Website Carbon Calculator methodology"
+      },
+      "performanceMetrics": {
+        "title": "Performance Metrics",
+        "description": "Turbopack: Official Vercel benchmarks • Biome: Community benchmarks • Tailwind CSS: Production build analysis from official documentation"
+      },
+      "greenWebStandards": {
+        "title": "Green Web Standards",
+        "description": "Following W3C Web Sustainability Guidelines 1.0 and Green Web Foundation recommendations"
+      }
+    },
+    "cta": {
+      "title": "Ready to Build Something Amazing?",
+      "subtitle": "Join the movement for sustainable web development. Build fast, efficient, and environmentally conscious applications.",
+      "startBuilding": "Start Building Now"
+    }
+  }
+}

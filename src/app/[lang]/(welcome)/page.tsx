@@ -1,23 +1,29 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { getDictionary } from "../dictionaries";
+import type { Locale } from "@/config/i18n-config";
 
-export default function Home() {
+export default async function Home(props: {
+  params: Promise<{ lang: Locale }>;
+}) {
+  const { lang } = await props.params;
+  const dict = await getDictionary(lang);
   return (
     <div>
       <section className="py-42 flex items-center justify-center p-8 ">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-2xl/snug font-bold tracking-tighter sm:text-5xl">
-            The first eco-conscious Next.js boilerplate optimized for{" "}
-            <span className="text-green-500">planet</span> and{" "}
-            <span className="text-blue-500">performance</span>
+            {dict.welcome.hero.title}{" "}
+            <span className="text-green-500">{dict.welcome.hero.titlePlanet}</span>{" "}
+            {dict.welcome.hero.titleAnd}{" "}
+            <span className="text-blue-500">{dict.welcome.hero.titlePerformance}</span>
           </h1>
           <p className="mt-4 text-muted-foreground text-lg">
-            Start your next project knowing it's optimized for both user
-            experience and planetary health.
+            {dict.welcome.hero.subtitle}
           </p>
           <div className="flex items-center justify-center mt-6 space-x-4">
-            <Button className="h-11 px-6">Get Started</Button>
+            <Button className="h-11 px-6">{dict.welcome.hero.getStarted}</Button>
             <Button variant="outline" asChild className="h-11 px-6">
               <Link href="https://github.com/NicolasGiaco/green-nextjs-boilerplate">
                 <Image
@@ -27,7 +33,7 @@ export default function Home() {
                   width={20}
                   height={20}
                 />
-                Support on GitHub
+                {dict.welcome.hero.supportGithub}
               </Link>
             </Button>
           </div>
@@ -37,55 +43,48 @@ export default function Home() {
       <section className="w-full max-w-6xl mx-auto p-8 sm:p-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="p-6 border rounded-lg bg-card">
-            <h3 className="text-lg font-semibold mb-3">🌱 Purpose</h3>
+            <h3 className="text-lg font-semibold mb-3">{dict.welcome.features.purpose.title}</h3>
             <p className="text-sm text-muted-foreground">
-              Build eco-conscious applications that minimize environmental
-              impact while maximizing developer productivity and user
-              experience.
+              {dict.welcome.features.purpose.description}
             </p>
           </div>
 
           <div className="p-6 border rounded-lg bg-card">
-            <h3 className="text-lg font-semibold mb-3">⚡ Performance</h3>
+            <h3 className="text-lg font-semibold mb-3">{dict.welcome.features.performance.title}</h3>
             <p className="text-sm text-muted-foreground">
-              Optimized for speed with minimal bundle size, efficient rendering,
-              and smart resource management out of the box.
-            </p>
-          </div>
-
-          <div className="p-6 border rounded-lg bg-card">
-            <h3 className="text-lg font-semibold mb-3">
-              🛠️ Developer Experience
-            </h3>
-            <p className="text-sm text-muted-foreground">
-              Modern tooling, TypeScript support, and best practices configured
-              for immediate productivity and code quality.
-            </p>
-          </div>
-
-          <div className="p-6 border rounded-lg bg-card">
-            <h3 className="text-lg font-semibold mb-3">🌍 Sustainability</h3>
-            <p className="text-sm text-muted-foreground">
-              Carbon-aware features and green coding practices to reduce digital
-              carbon footprint and energy consumption.
-            </p>
-          </div>
-
-          <div className="p-6 border rounded-lg bg-card">
-            <h3 className="text-lg font-semibold mb-3">🎨 Modern Design</h3>
-            <p className="text-sm text-muted-foreground">
-              Beautiful, accessible components with dark/light mode support and
-              responsive design patterns.
+              {dict.welcome.features.performance.description}
             </p>
           </div>
 
           <div className="p-6 border rounded-lg bg-card">
             <h3 className="text-lg font-semibold mb-3">
-              🆓 Free & Open Source
+              {dict.welcome.features.developerExperience.title}
             </h3>
             <p className="text-sm text-muted-foreground">
-              Completely free to use and modify. Everyone can contribute to make
-              web development more sustainable together.
+              {dict.welcome.features.developerExperience.description}
+            </p>
+          </div>
+
+          <div className="p-6 border rounded-lg bg-card">
+            <h3 className="text-lg font-semibold mb-3">{dict.welcome.features.sustainability.title}</h3>
+            <p className="text-sm text-muted-foreground">
+              {dict.welcome.features.sustainability.description}
+            </p>
+          </div>
+
+          <div className="p-6 border rounded-lg bg-card">
+            <h3 className="text-lg font-semibold mb-3">{dict.welcome.features.productionReady.title}</h3>
+            <p className="text-sm text-muted-foreground">
+              {dict.welcome.features.productionReady.description}
+            </p>
+          </div>
+
+          <div className="p-6 border rounded-lg bg-card">
+            <h3 className="text-lg font-semibold mb-3">
+              {dict.welcome.features.openSource.title}
+            </h3>
+            <p className="text-sm text-muted-foreground">
+              {dict.welcome.features.openSource.description}
             </p>
           </div>
         </div>
@@ -94,36 +93,36 @@ export default function Home() {
       {/* Eco Stats Section */}
       <section className="w-full max-w-6xl mx-auto p-8 sm:p-16">
         <div className="text-center mb-8">
-          <h2 className="text-2xl font-bold mb-2">🌱 Environmental Impact</h2>
+          <h2 className="text-2xl font-bold mb-2">{dict.welcome.ecoStats.title}</h2>
           <p className="text-muted-foreground">
-            Verified benefits of our eco-conscious tech stack
+            {dict.welcome.ecoStats.subtitle}
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div className="p-4 border rounded-lg bg-green-500/5">
             <div className="text-3xl font-bold text-green-500">62%</div>
-            <p className="text-sm text-muted-foreground">Less CO2</p>
+            <p className="text-sm text-muted-foreground">{dict.welcome.ecoStats.lessCO2}</p>
             <p className="text-xs text-muted-foreground mt-1">
               0.3g vs 0.8g per page load
             </p>
           </div>
           <div className="p-4 border rounded-lg bg-blue-500/5">
             <div className="text-3xl font-bold text-blue-500">76%</div>
-            <p className="text-sm text-muted-foreground">Faster Startup</p>
+            <p className="text-sm text-muted-foreground">{dict.welcome.ecoStats.fasterStartup}</p>
             <p className="text-xs text-muted-foreground mt-1">
               with Turbopack Dev
             </p>
           </div>
           <div className="p-4 border rounded-lg bg-purple-500/5">
             <div className="text-3xl font-bold text-purple-500">90%</div>
-            <p className="text-sm text-muted-foreground">Less CSS</p>
+            <p className="text-sm text-muted-foreground">{dict.welcome.ecoStats.lessCSS}</p>
             <p className="text-xs text-muted-foreground mt-1">
               ~10KB vs 100KB+ production
             </p>
           </div>
           <div className="p-4 border rounded-lg bg-orange-500/5">
             <div className="text-3xl font-bold text-orange-500">20x</div>
-            <p className="text-sm text-muted-foreground">Faster Linting</p>
+            <p className="text-sm text-muted-foreground">{dict.welcome.ecoStats.fasterLinting}</p>
             <p className="text-xs text-muted-foreground mt-1">
               Biome vs ESLint
             </p>
@@ -134,9 +133,9 @@ export default function Home() {
       {/* Quick Start Section */}
       <section className="w-full max-w-4xl mx-auto px-8 py-16">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold mb-4">Get Started in Seconds</h2>
+          <h2 className="text-3xl font-bold mb-4">{dict.welcome.quickStart.title}</h2>
           <p className="text-muted-foreground">
-            Clone, install, and start building. It's that simple.
+            {dict.welcome.quickStart.subtitle}
           </p>
         </div>
         <div className="bg-card border rounded-lg p-6">
@@ -159,10 +158,9 @@ pnpm dev`}
       {/* Tech Stack Section */}
       <section className="w-full max-w-6xl mx-auto p-8 sm:p-16">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Complete Tech Stack</h2>
+          <h2 className="text-3xl font-bold mb-4">{dict.welcome.techStack.title}</h2>
           <p className="text-muted-foreground text-lg">
-            Everything you need for modern web development, pre-configured and
-            ready to use.
+            {dict.welcome.techStack.subtitle}
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -247,11 +245,10 @@ pnpm dev`}
       <section className="w-full max-w-6xl mx-auto p-8 sm:p-16">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">
-            🌍 Environmental Impact Comparison
+            {dict.welcome.environmentalComparison.title}
           </h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-            Verified metrics showing how this eco-conscious stack reduces
-            environmental impact compared to traditional alternatives.
+            {dict.welcome.environmentalComparison.subtitle}
           </p>
         </div>
 
@@ -260,12 +257,12 @@ pnpm dev`}
           <table className="w-full border rounded-lg">
             <thead className="bg-muted/50">
               <tr>
-                <th className="p-4 text-left">Metric</th>
-                <th className="p-4 text-center">This Green Stack</th>
-                <th className="p-4 text-center">Standard Next.js Setup</th>
-                <th className="p-4 text-center">Traditional Stack</th>
+                <th className="p-4 text-left">{dict.welcome.environmentalComparison.tableHeaders.metric}</th>
+                <th className="p-4 text-center">{dict.welcome.environmentalComparison.tableHeaders.greenStack}</th>
+                <th className="p-4 text-center">{dict.welcome.environmentalComparison.tableHeaders.standardNextjs}</th>
+                <th className="p-4 text-center">{dict.welcome.environmentalComparison.tableHeaders.traditionalStack}</th>
                 <th className="p-4 text-center text-green-600">
-                  Environmental Benefit
+                  {dict.welcome.environmentalComparison.tableHeaders.environmentalBenefit}
                 </th>
               </tr>
             </thead>
@@ -345,26 +342,23 @@ pnpm dev`}
         <div className="mt-12 grid md:grid-cols-3 gap-6">
           <div className="text-center p-6 border rounded-lg bg-green-500/5">
             <div className="text-2xl mb-3">🌱</div>
-            <h3 className="font-semibold mb-2">For Users</h3>
+            <h3 className="font-semibold mb-2">{dict.welcome.environmentalComparison.realWorldBenefits.forUsers.title}</h3>
             <p className="text-sm text-muted-foreground">
-              Faster loading sites mean less time waiting, reducing device
-              battery consumption and energy usage.
+              {dict.welcome.environmentalComparison.realWorldBenefits.forUsers.description}
             </p>
           </div>
           <div className="text-center p-6 border rounded-lg bg-blue-500/5">
             <div className="text-2xl mb-3">🏢</div>
-            <h3 className="font-semibold mb-2">For Developers</h3>
+            <h3 className="font-semibold mb-2">{dict.welcome.environmentalComparison.realWorldBenefits.forDevelopers.title}</h3>
             <p className="text-sm text-muted-foreground">
-              Faster builds and efficient tooling mean less development machine
-              energy and reduced CI/CD costs.
+              {dict.welcome.environmentalComparison.realWorldBenefits.forDevelopers.description}
             </p>
           </div>
           <div className="text-center p-6 border rounded-lg bg-purple-500/5">
             <div className="text-2xl mb-3">🌍</div>
-            <h3 className="font-semibold mb-2">For Planet</h3>
+            <h3 className="font-semibold mb-2">{dict.welcome.environmentalComparison.realWorldBenefits.forPlanet.title}</h3>
             <p className="text-sm text-muted-foreground">
-              Smaller bundles and optimized performance reduce server load and
-              network transfer energy globally.
+              {dict.welcome.environmentalComparison.realWorldBenefits.forPlanet.description}
             </p>
           </div>
         </div>
@@ -373,33 +367,29 @@ pnpm dev`}
       <section className="w-full max-w-4xl mx-auto px-8 py-16">
         <div className="text-center mb-8">
           <h2 className="text-2xl font-bold mb-4">
-            📊 Data Sources & Methodology
+            {dict.welcome.dataSources.title}
           </h2>
           <p className="text-muted-foreground">
-            All metrics are based on verified benchmarks and industry standards
+            {dict.welcome.dataSources.subtitle}
           </p>
         </div>
         <div className="space-y-4">
           <div className="p-4 border rounded-lg bg-card">
-            <h4 className="font-semibold mb-2">Carbon Emissions</h4>
+            <h4 className="font-semibold mb-2">{dict.welcome.dataSources.carbonEmissions.title}</h4>
             <p className="text-sm text-muted-foreground">
-              Based on Sustainable Web Design Model v4.0 and Website Carbon
-              Calculator methodology
+              {dict.welcome.dataSources.carbonEmissions.description}
             </p>
           </div>
           <div className="p-4 border rounded-lg bg-card">
-            <h4 className="font-semibold mb-2">Performance Metrics</h4>
+            <h4 className="font-semibold mb-2">{dict.welcome.dataSources.performanceMetrics.title}</h4>
             <p className="text-sm text-muted-foreground">
-              Turbopack: Official Vercel benchmarks • Biome: Community
-              benchmarks • Tailwind CSS: Production build analysis from official
-              documentation
+              {dict.welcome.dataSources.performanceMetrics.description}
             </p>
           </div>
           <div className="p-4 border rounded-lg bg-card">
-            <h4 className="font-semibold mb-2">Green Web Standards</h4>
+            <h4 className="font-semibold mb-2">{dict.welcome.dataSources.greenWebStandards.title}</h4>
             <p className="text-sm text-muted-foreground">
-              Following W3C Web Sustainability Guidelines 1.0 and Green Web
-              Foundation recommendations
+              {dict.welcome.dataSources.greenWebStandards.description}
             </p>
           </div>
         </div>
@@ -409,16 +399,15 @@ pnpm dev`}
       <section className="w-full max-w-4xl mx-auto px-8 py-16 text-center">
         <div className="border rounded-2xl p-12 bg-gradient-to-br from-green-500/5 to-blue-500/5">
           <h2 className="text-3xl font-bold mb-4">
-            Ready to Build Something Amazing?
+            {dict.welcome.cta.title}
           </h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-            Join the movement for sustainable web development. Build fast,
-            efficient, and environmentally conscious applications.
+            {dict.welcome.cta.subtitle}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild className="text-lg px-8">
               <Link href="https://github.com/NicolasGiaco/green-nextjs-boilerplate">
-                Start Building Now
+                {dict.welcome.cta.startBuilding}
               </Link>
             </Button>
           </div>

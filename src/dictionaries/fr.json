@@ -1,0 +1,104 @@
+{
+  "navbar": {
+    "title": "Boilerplate Next.js Vert"
+  },
+  "welcome": {
+    "hero": {
+      "title": "Le premier boilerplate Next.js éco-responsable optimisé pour la",
+      "titlePlanet": "planète",
+      "titleAnd": "et les",
+      "titlePerformance": "performances",
+      "subtitle": "Commencez votre prochain projet en sachant qu'il est optimisé à la fois pour l'expérience utilisateur et la planète.",
+      "getStarted": "Commencer",
+      "supportGithub": "Soutenir sur GitHub"
+    },
+    "features": {
+      "purpose": {
+        "title": "🌱 Objectif",
+        "description": "Construire des applications éco-responsables qui minimisent l'impact environnemental tout en maximisant la productivité des développeurs et l'expérience utilisateur."
+      },
+      "performance": {
+        "title": "⚡ Performance",
+        "description": "Optimisé pour la vitesse avec une taille de bundle minimale, un rendu efficace et une gestion intelligente des ressources prête à l'emploi."
+      },
+      "developerExperience": {
+        "title": "🛠️ Expérience Développeur",
+        "description": "Outils modernes, support TypeScript et bonnes pratiques configurés pour une productivité immédiate et la qualité du code."
+      },
+      "sustainability": {
+        "title": "🌍 Durabilité",
+        "description": "Fonctionnalités conscientes du carbone et pratiques de codage vert pour réduire l'empreinte carbone numérique et la consommation d'énergie."
+      },
+      "productionReady": {
+        "title": "🚀 Prêt pour la Production",
+        "description": "Processus de build pré-configurés, Dockerfile optimisé et pratiques de sécurité de niveau production. Prêt à déployer dès le premier jour."
+      },
+      "openSource": {
+        "title": "🆓 Gratuit & Open Source",
+        "description": "Complètement gratuit à utiliser et modifier. Chacun peut contribuer à rendre le développement web plus durable ensemble."
+      }
+    },
+    "ecoStats": {
+      "title": "🌱 Impact Environnemental",
+      "subtitle": "Bénéfices vérifiés de notre stack éco-responsable",
+      "lessCO2": "Moins de CO2",
+      "fasterStartup": "Démarrage Plus Rapide",
+      "lessCSS": "Moins de CSS",
+      "fasterLinting": "Linting Plus Rapide"
+    },
+    "quickStart": {
+      "title": "Commencer en quelques secondes",
+      "subtitle": "Clonez, installez et commencez à construire. C'est aussi simple que ça."
+    },
+    "techStack": {
+      "title": "Stack Technique Complète",
+      "subtitle": "Tout ce dont vous avez besoin pour le développement web moderne, pré-configuré et prêt à utiliser."
+    },
+    "environmentalComparison": {
+      "title": "🌍 Comparaison Impact Environnemental",
+      "subtitle": "Métriques vérifiées montrant comment cette stack éco-responsable réduit l'impact environnemental comparé aux alternatives traditionnelles.",
+      "tableHeaders": {
+        "metric": "Métrique",
+        "greenStack": "Cette Stack Verte",
+        "standardNextjs": "Setup Next.js Standard",
+        "traditionalStack": "Stack Traditionnelle",
+        "environmentalBenefit": "Bénéfice Environnemental"
+      },
+      "realWorldBenefits": {
+        "forUsers": {
+          "title": "Pour les Utilisateurs",
+          "description": "Les sites qui se chargent plus rapidement signifient moins de temps d'attente, réduisant la consommation de batterie des appareils et l'usage énergétique."
+        },
+        "forDevelopers": {
+          "title": "Pour les Développeurs",
+          "description": "Des builds plus rapides et des outils efficaces signifient moins d'énergie pour les machines de développement et des coûts CI/CD réduits."
+        },
+        "forPlanet": {
+          "title": "Pour la Planète",
+          "description": "Des bundles plus petits et des performances optimisées réduisent la charge serveur et l'énergie de transfert réseau globalement."
+        }
+      }
+    },
+    "dataSources": {
+      "title": "📊 Sources de Données & Méthodologie",
+      "subtitle": "Toutes les métriques sont basées sur des benchmarks vérifiés et des standards industriels",
+      "carbonEmissions": {
+        "title": "Émissions Carbone",
+        "description": "Basé sur le Modèle de Design Web Durable v4.0 et la méthodologie du Calculateur Carbone de Sites Web"
+      },
+      "performanceMetrics": {
+        "title": "Métriques de Performance",
+        "description": "Turbopack : Benchmarks officiels Vercel • Biome : Benchmarks communautaires • Tailwind CSS : Analyse de build de production de la documentation officielle"
+      },
+      "greenWebStandards": {
+        "title": "Standards Web Verts",
+        "description": "Suivant les Directives de Durabilité Web W3C 1.0 et les recommandations de la Green Web Foundation"
+      }
+    },
+    "cta": {
+      "title": "Prêt à construire quelque chose d'incroyable ?",
+      "subtitle": "Rejoignez le mouvement pour le développement web durable. Construisez des applications rapides, efficaces et respectueuses de l'environnement.",
+      "startBuilding": "Commencer à Construire"
+    }
+  }
+}

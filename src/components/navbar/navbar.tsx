@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { ThemeToggle } from "@/components/theme/theme-toggle";
+import { LanguageSwitcher } from "@/components/navbar/language-switcher";
 import Image from "next/image";
 import { Leaf } from "lucide-react";
 
@@ -49,6 +50,7 @@ export function Navbar() {
                 alt="GitHub"
               />
             </Link>
+            <LanguageSwitcher />
             <ThemeToggle />
           </nav>
         </div>
